@@ -144,15 +144,21 @@
     <p class="mt-3">
       本日、個人情報を持ち帰りますか？
     </p>
-    <input type="checkbox" id="pc-ch" name="pc-ch" size="25">
-    <label for="pc-ch">パソコン</label>
-    <br>
-    <input type="checkbox" id="tb-ch" name="tb-ch" size="25">
-    <label for="tb-ch">タブレット</label>
-    <br>
-    <label for="ather">その他</label><br>
-    <textarea type="text" id="ather" name="ather" rows="3" cols="50"></textarea>
-
+      <ul>
+        <li>
+          <input type="checkbox" id="pc-ch" name="pc-ch" size="25">
+          <label for="pc-ch">パソコン</label>
+        </li>
+        <li>
+          <input type="checkbox" id="tb-ch" name="tb-ch" size="25">
+          <label for="tb-ch">タブレット</label>
+        </li>
+        <li>
+          <label for="ather">その他</label><br>
+          <textarea type="text" id="ather" name="ather" rows="3" cols="50"></textarea>
+        </li>
+      </ul>
+        
     <p class="mt-3">
       本日、研修やセミナーを受講しましたか？
       <br>
@@ -178,7 +184,7 @@
     </p>
 
     <input type="submit" class="mt-4 btn btn-primary" value="送信">
-    
+
   </form>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
