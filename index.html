@@ -17,15 +17,17 @@
     <p class="mt-3">
       勤務状況
     </p>
-    <input type="checkbox" id="check" name="check" size="25">
-    <label for="check">有給</label>
-    <br>
-    <input type="checkbox" id="check1" name="check1" size="25">
-    <label for="check1">遅刻</label>
+    <select name="work1" id="work1">
+      <option value="出勤">出勤</option>
+      <option value="遅刻">遅刻</option>
+      <option value="有給">有給</option>
+    </select>
     <input type="time" name="time1" size="25">
     <br>
-    <input type="checkbox" id="check2" name="check2" size="25">
-    <label for="check2">早退</label>
+    <select name="work2" id="work2">
+      <option value="退勤">退勤</option>
+      <option value="早退">早退</option>
+    </select>
     <input type="time" name="time2" size="25">
 
     <p class="mt-3">
@@ -36,11 +38,12 @@
         <ul>
           <li>
             <label for="cname1">お客様名</label><br>
-            <input type="text" id="cneme1" name="cname1" size="25">
+            <input type="text" id="cname1" name="cname1" size="25">
           </li>
           <li>
             <label for="cname1old">高齢者対応</label>
             <select id="cname1old" name="cname1old">
+              <option value="">未選択</option>
               <option value="該当">該当</option>
               <option value="非該当">非該当</option>
             </select>
@@ -48,6 +51,7 @@
           <li>
             <label for="cname1think">意向把握シート</label>
             <select id="cname1think" name="cname1think">
+              <option value="">未選択</option>
               <option value="対象">対象</option>
               <option value="非対象">非対象</option>
             </select>
@@ -62,19 +66,27 @@
         <ul>
           <li>
             <label for="cname2">お客様名</label><br>
-            <input type="text" id="cneme2" name="cname2" size="25">
+            <input type="text" id="cname2" name="cname2" size="25">
           </li>
           <li>
-            <input type="checkbox" id="cneme2-ch1" name="cname2-ch1">
-            <label for="cname2-ch1">高齢者対応　該当者</label>
+            <label for="cname2old">高齢者対応</label>
+            <select id="cname2old" name="cname2old">
+              <option value="">未選択</option>
+              <option value="該当">該当</option>
+              <option value="非該当">非該当</option>
+            </select>
           </li>
           <li>
-            <input type="checkbox" id="cneme2-ch2" name="cname2-ch2">
-            <label for="cname2-ch2">意向把握シート　記入対象</label>
+            <label for="cname2think">意向把握シート</label>
+            <select id="cname2think" name="cname2think">
+              <option value="">未選択</option>
+              <option value="対象">対象</option>
+              <option value="非対象">非対象</option>
+            </select>
           </li>
           <li>
             <label for="cname2-text">目的・面談内容及び情報収集</label><br>
-            <textarea type="text" id="cneme2-text" name="cname2-text" rows="10" cols="25"></textarea>
+            <textarea type="text" id="cname2-text" name="cname2-text" rows="10" cols="25"></textarea>
           </li>
         </ul>
       </li>
@@ -82,19 +94,27 @@
         <ul>
           <li>
             <label for="cname3">お客様名</label><br>
-            <input type="text" id="cneme3" name="cname3" size="25">
+            <input type="text" id="cname3" name="cname3" size="25">
           </li>
           <li>
-            <input type="checkbox" id="cneme3-ch1" name="cname3-ch1">
-            <label for="cname3-ch1">高齢者対応　該当者</label>
+            <label for="cname3old">高齢者対応</label>
+            <select id="cname3old" name="cname3old">
+              <option value="">未選択</option>
+              <option value="該当">該当</option>
+              <option value="非該当">非該当</option>
+            </select>
           </li>
           <li>
-            <input type="checkbox" id="cneme3-ch2" name="cname3-ch2">
-            <label for="cname3-ch2">意向把握シート　記入対象</label>
+            <label for="cname3think">意向把握シート</label>
+            <select id="cname3think" name="cname3think">
+              <option value="">未選択</option>
+              <option value="対象">対象</option>
+              <option value="非対象">非対象</option>
+            </select>
           </li>
           <li>
             <label for="cname3-text">目的・面談内容及び情報収集</label><br>
-            <textarea type="text" id="cneme3-text" name="cname3-text" rows="10" cols="25"></textarea>
+            <textarea type="text" id="cname3-text" name="cname3-text" rows="10" cols="25"></textarea>
           </li>
         </ul>
       </li>
@@ -102,19 +122,27 @@
         <ul>
           <li>
             <label for="cname4">お客様名</label><br>
-            <input type="text" id="cneme4" name="cname4" size="25">
+            <input type="text" id="cname4" name="cname4" size="25">
           </li>
           <li>
-            <input type="checkbox" id="cneme4-ch1" name="cname4-ch1">
-            <label for="cname4-ch1">高齢者対応　該当者</label>
+            <label for="cname4old">高齢者対応</label>
+            <select id="cname4old" name="cname4old">
+              <option value="">未選択</option>
+              <option value="該当">該当</option>
+              <option value="非該当">非該当</option>
+            </select>
           </li>
           <li>
-            <input type="checkbox" id="cneme4-ch2" name="cname4-ch2">
-            <label for="cname4-ch2">意向把握シート　記入対象</label>
+            <label for="cname4think">意向把握シート</label>
+            <select id="cname4think" name="cname4think">
+              <option value="">未選択</option>
+              <option value="対象">対象</option>
+              <option value="非対象">非対象</option>
+            </select>
           </li>
           <li>
             <label for="cname4-text">目的・面談内容及び情報収集</label><br>
-            <textarea type="text" id="cneme4-text" name="cname4-text" rows="10" cols="25"></textarea>
+            <textarea type="text" id="cname4-text" name="cname4-text" rows="10" cols="25"></textarea>
           </li>
         </ul>
       </li>
@@ -122,19 +150,27 @@
         <ul>
           <li>
             <label for="cname5">お客様名</label><br>
-            <input type="text" id="cneme5" name="cname5" size="25">
+            <input type="text" id="cname5" name="cname5" size="25">
           </li>
           <li>
-            <input type="checkbox" id="cneme5-ch1" name="cname5-ch1">
-            <label for="cname5-ch1">高齢者対応　該当者</label>
+            <label for="cname5old">高齢者対応</label>
+            <select id="cname5old" name="cname5old">
+              <option value="">未選択</option>
+              <option value="該当">該当</option>
+              <option value="非該当">非該当</option>
+            </select>
           </li>
           <li>
-            <input type="checkbox" id="cneme5-ch2" name="cname5-ch2">
-            <label for="cname5-ch2">意向把握シート　記入対象</label>
+            <label for="cname5think">意向把握シート</label>
+            <select id="cname5think" name="cname5think">
+              <option value="">未選択</option>
+              <option value="対象">対象</option>
+              <option value="非対象">非対象</option>
+            </select>
           </li>
           <li>
             <label for="cname5-text">目的・面談内容及び情報収集</label><br>
-            <textarea type="text" id="cneme5-text" name="cname5-text" rows="10" cols="25"></textarea>
+            <textarea type="text" id="cname5-text" name="cname5-text" rows="10" cols="25"></textarea>
           </li>
         </ul>
       </li>
@@ -152,12 +188,18 @@
     </p>
       <ul>
         <li>
-          <input type="checkbox" id="pc-ch" name="pc-ch" size="25">
           <label for="pc-ch">パソコン</label>
+          <select name="pcch" id="pcch">
+            <option value="持ち出し">持ち出し</option>
+            <option value="返却">返却</option>
+          </select>
         </li>
         <li>
-          <input type="checkbox" id="tb-ch" name="tb-ch" size="25">
           <label for="tb-ch">タブレット</label>
+          <select name="tbch" id="tbch">
+            <option value="持ち出し">持ち出し</option>
+            <option value="返却">返却</option>
+          </select>
         </li>
         <li>
           <label for="ather">その他</label><br>
