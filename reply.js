@@ -16,7 +16,7 @@ $(function () {
       // 訪問先１
       var cname1 = $('input[name="cname1"]').val();
       var cname1old = $('select[name="cname1old"]').val();
-      var cname1think = $('input[name="cname1think"]').val();
+      var cname1think = $('select[name="cname1think"]').val();
       var cname1text = $('textarea[name="cname1-text"]').val();
       // お客様名２
       var cname2 = $('input[name="cname2"]').val();
