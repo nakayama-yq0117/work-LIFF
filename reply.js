@@ -39,8 +39,8 @@ $(function () {
     // 苦情
     var replytext = $('textarea[name="reply-text"]').val();
     // 持ち出し
-    var pcch = $('select[name="pc-ch"]').val();
-    var tbch = $('select[name="tb-ch"]').val();
+    var pcch = $('select[name="pcch"]').val();
+    var tbch = $('select[name="tbch"]').val();
     var ather = $('textarea[name="ather"]').val();
     // 研修受講
     var se1 = $('input[name="se1"]').val();
