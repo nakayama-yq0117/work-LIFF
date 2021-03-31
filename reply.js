@@ -14,10 +14,9 @@ $(function () {
     var time2 = $('input[name="time2"]').val()
     // 訪問先
       // 訪問先１
-      // お客様名１
       var cname1 = $('input[name="cname1"]').val();
-      var cname1ch1 = $('input[name="cname1-ch1"]').val();
-      var cname1ch2 = $('input[name="cname1-ch2"]').val();
+      var cname1old = $('select[name="cname1old"]').val();
+      var cname1think = $('input[name="cname1think"]').val();
       var cname1text = $('textarea[name="cname1-text"]').val();
       // お客様名２
       var cname2 = $('input[name="cname2"]').val();
@@ -50,7 +49,7 @@ $(function () {
     var se2 = $('input[name="se2"]').val();
     var se3 = $('input[name="se3"]').val();
 
-    var msg = `${check}\n${check1}\n${time1}\n${check2}\n${time2}\n${cname1}\n${cname1ch1}\n${cname1ch2}\n${cname1text}\n${cname2}\n${cname2ch1}\n${cname2ch2}\n${cname2text}\n${cname3}\n${cname3ch1}\n${cname3ch2}\n${cname3text}\n${cname4}\n${cname4ch1}\n${cname4ch2}\n${cname4text}\n${cname5}\n${cname5ch1}\n${cname5ch2}\n${cname5text}\n${replytext}\n${pcch}\n${tbch}\n${ather}\n${se1}\n${se2}\n${se3}`;
+    var msg = `${check}\n${check1}\n${time1}\n${check2}\n${time2}\n${cname1}\n${cname1old}\n${cname1think}\n${cname1text}\n${cname2}\n${cname2ch1}\n${cname2ch2}\n${cname2text}\n${cname3}\n${cname3ch1}\n${cname3ch2}\n${cname3text}\n${cname4}\n${cname4ch1}\n${cname4ch2}\n${cname4text}\n${cname5}\n${cname5ch1}\n${cname5ch2}\n${cname5text}\n${replytext}\n${pcch}\n${tbch}\n${ather}\n${se1}\n${se2}\n${se3}`;
     sendText(msg);
 
     return false;
