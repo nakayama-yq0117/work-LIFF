@@ -4,12 +4,14 @@ var params = (new URL(document.location)).searchParams;
 $(function () {
   // 送信
   $('form').submit(function () {
+    var bname = $('select[name="bname"]').val();
+    var today = $('input[name="today"]').val();
     // 出勤
-    var work1 = $('select[name="work1"]').val()
-    var time1 = $('input[name="time1"]').val()
+    var work1 = $('select[name="work1"]').val();
+    var time1 = $('input[name="time1"]').val();
     // 退勤
-    var work2 = $('select[name="work2"]').val()
-    var time2 = $('input[name="time2"]').val()
+    var work2 = $('select[name="work2"]').val();
+    var time2 = $('input[name="time2"]').val();
     // 訪問先
       // 訪問先１
       var cname1 = $('input[name="cname1"]').val();
@@ -37,6 +39,8 @@ $(function () {
       var cname5think = $('select[name="cname5think"]').val();
       var cname5text = $('textarea[name="cname5-text"]').val();
     // 苦情
+    var reon = $('select[name="reon"]').val();
+    var rename = $('input[name="rename"]').val();
     var replytext = $('textarea[name="reply-text"]').val();
     // 持ち出し
     var pcch = $('select[name="pcch"]').val();
@@ -48,9 +52,11 @@ $(function () {
     var se3 = $('input[name="se3"]').val();
     var se4 = $('input[name="se4"]').val();
 
-    var msg = `${work1}\n${time1}\n${work2}\n${time2}\n${cname1}\n${cname1old}\n${cname1think}\n${cname1text}\n${cname2}\n${cname2old}\n${cname2think}\n${cname2text}\n${cname3}\n${cname3old}\n${cname3think}\n${cname3text}\n${cname4}\n${cname4old}\n${cname4think}\n${cname4text}\n${cname5}\n${cname5old}\n${cname5think}\n${cname5text}\n${replytext}\n${pcch}\n${tbch}\n${ather}\n${se1}\n${se2}\n${se3}\n${se4}`;
+    var msg = `${bname}\n${today}\n${work1}\n${time1}\n${work2}\n${time2}\n${cname1}\n${cname1old}\n${cname1think}\n${cname1text}\n${cname2}\n${cname2old}\n${cname2think}\n${cname2text}\n${cname3}\n${cname3old}\n${cname3think}\n${cname3text}\n${cname4}\n${cname4old}\n${cname4think}\n${cname4text}\n${cname5}\n${cname5old}\n${cname5think}\n${cname5text}\n${reon}\n${rename}\n${replytext}\n${pcch}\n${tbch}\n${ather}\n${se1}\n${se2}\n${se3}\n${se4}`;
     sendText(msg);
 
     return false;
-  });
+  })
+  
+
 });

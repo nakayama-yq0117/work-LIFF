@@ -13,7 +13,17 @@
     <p class="mt-3">
       日報を入力してください！
     </p>
-
+    <select name="bname" id="">
+      <option value="">名前選択</option>
+      <option value="加藤">加藤</option>
+      <option value="今野">今野</option>
+      <option value="阿部">阿部</option>
+      <option value="佐藤">佐藤</option>
+      <option value="高橋">高橋</option>
+      <option value="杉沼">杉沼</option>
+      <option value="中山">中山</option>
+    </select>
+    <input type="date" name="today" id="today">
     <p class="mt-3">
       勤務状況
     </p>
@@ -31,7 +41,7 @@
     <input type="time" name="time2" size="25">
 
     <p class="mt-3">
-      本日の訪問先
+      本日の訪問先、来店者
     </p>
     <p class="mt-3">1</p>
     <label for="cname1">お客様名</label><br>
@@ -124,6 +134,12 @@
       <br>
       （苦情とは不満足の表明です。証券が届いていない、控除証明書が届いていない等も含まれます。）
     </p>
+    <select name="reon" id="">
+      <option value="なし">なし</option>
+      <option value="あり">あり</option>
+    </select><br>
+    <label for="rename">お名前</label><br>
+    <input type="text" name="rename" size="25"><br>
     <textarea type="text" id="replytext" name="reply-text" rows="10" cols="30"></textarea>
 
     <p class="mt-3">
